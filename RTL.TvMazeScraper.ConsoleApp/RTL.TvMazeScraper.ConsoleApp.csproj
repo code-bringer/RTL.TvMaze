@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TvMaze.Api.Client" Version="0.1.72" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTL.TvMazeScraper.Core\RTL.TvMazeScraper.Core.csproj" />
+    <ProjectReference Include="..\RTL.TvMazeScraper.Sql\RTL.TvMazeScraper.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
